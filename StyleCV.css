@@ -1,0 +1,678 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Anton', sans-serif;
+}
+
+body {
+    background-image: url(images/fond.png);
+    color: #1c2b3b;
+}
+
+header {
+    height: 14vh;
+    width: 100%;
+    padding: 0;
+    background-color: #EEDCB8;
+    font-size: 2.5rem;
+    font-weight: 700;
+    letter-spacing: 0.3rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-transform: uppercase;
+}
+
+header h1 {
+    margin-left: 3%;
+    font-size: 12vh;
+}
+
+div#menu {
+    display: flex;
+    flex-direction: row;
+    align-self: flex-end;
+}
+
+#menu {
+    height: 100%;
+}
+
+#menu a {
+    width: 15vw;
+    height: 100%;
+    font-size: 3vw;
+    font-weight: 400;
+    text-decoration: none;
+    text-transform: uppercase;
+    position: relative;
+    color: white;
+    z-index: 0;
+    background: #EEDCB8;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#menu a::before {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #1c2b3b;
+    z-index: -1;
+    transition: all .5s;
+}
+
+#menu a:hover::before {
+    top: 0px;
+    border-radius: 0;
+}
+
+main#cv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#présentation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 25vw;
+    padding-bottom: 2vh;
+    border-bottom: 2px solid #EEDCB8;
+    margin-bottom: 2vh;
+}
+
+#infos {
+    color: #EEDCB8;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    letter-spacing: 0.1rem;
+}
+
+#infos h3 {
+    font-weight: 200;
+}
+
+#présentation img {
+    width: 20vh;
+    margin-top: -10vh;
+    clip-path: ellipse(50% 50%);
+}
+
+article {
+    color: #EEDCB8;
+}
+
+article {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.cotes {
+    width: 30vw;
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+    margin-left: 9vw;
+    margin-right: 9vw;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    border-radius: 10px;
+}
+
+.group {
+    border-radius: 10px;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+.group:hover {
+    background-color: rgba(240, 236, 236, 0.4);
+    transition: all .8s;
+    color: #1c2b3b;
+}
+
+#trait {
+    width: 2px;
+    background-color: #EEDCB8;
+}
+
+article h2 {
+    text-decoration: underline;
+}
+
+.idee {
+    margin-left: 2vw;
+    margin-bottom: 5%;
+    border-radius: 10px;
+}
+
+.idee h3 {
+    font-family: 'Abel', sans-serif;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+.idee h3 span {
+    font-family: 'Abel', sans-serif;
+    font-size: .9rem;
+    font-weight: 300;
+}
+
+.idee p, .idee ul li {
+    font-family: 'Abel', sans-serif;
+    font-size: 1rem;
+    font-weight: lighter;
+}
+
+.icone {
+    width: 4vw;
+    margin-right: 2%;
+}
+
+#titreicone {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    align-items: center;
+    border-radius: 10px;
+    margin-left: 2%;
+}
+
+/*___________________ INDEX______________*/
+
+#index a {
+    width: 20vw;
+    height: 100px;
+    font-size: 3vw;
+    font-weight: 400;
+    text-decoration: none;
+    letter-spacing: 0.3rem;
+    text-transform: uppercase;
+    position: relative;
+    color: white;
+    z-index: 0;
+    background: #1c2b3b;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#index a::before {
+    content: '';
+    position: absolute;
+    top: 95px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #EEDCB8;
+    z-index: -1;
+    transition: all .5s;
+}
+
+#index a:hover::before {
+    top: 0px;
+    border-radius: 0;
+}
+
+main#index {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 75vh;
+}
+
+footer {
+    background-color: #EEDCB8;
+    height: 8vh;
+    width: 99%;
+    font-size: 1.3rem;
+    text-align: right;
+    padding-top: 2vh;
+    padding-right: 1vw;
+}
+
+/*___________________ METIER______________*/
+
+main#metier {
+    color: #EEDCB8;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+    padding-left: 2vw;
+    padding-right: 2vw;
+}
+
+#metier a {
+    width: 40vw;
+    height: 10vh;
+    font-size: 2vw;
+    font-weight: 400;
+    text-decoration: none;
+    letter-spacing: 0.3rem;
+    text-transform: uppercase;
+    text-align: center;
+    position: relative;
+    color: white;
+    z-index: 0;
+    background: #1c2b3b;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#metier a::before {
+    content: '';
+    position: absolute;
+    top: 9.8vh;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #EEDCB8;
+    z-index: -1;
+    transition: all .5s;
+}
+
+#metier a:hover::before {
+    top: 0px;
+    border-radius: 0;
+}
+
+.part h2 {
+    font-size: 2.3rem;
+}
+
+#questionnaire {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5vh;
+    padding-left: 12vw;
+    padding-right: 12vw;
+}
+
+#questionnaire h3, #questionnaire .partie {
+    font-weight: bold;
+    font-family: 'Abel', sans-serif;
+    font-size: 1.5rem;
+}
+
+#infoMetier h3 {
+    font-weight: bold;
+    font-family: 'Abel', sans-serif;
+    font-size: 1.1rem;
+}
+
+#questionnaire strong {
+    font-weight: lighter;
+    color: #D3CAD3;
+}
+
+.partie {
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+}
+
+.partie ul {
+    list-style: none;
+}
+
+.partie ul li {
+    font-size: 1rem;
+    font-weight: bold;
+    font-family: 'Abel', sans-serif;
+}
+
+.partie:hover li {
+    transition: all .9s;
+    font-size: 1.4rem;
+}
+
+.partie #titrepartie {
+    display: flex;
+    flex-direction: row;
+}
+
+#titrepartie img {
+    display: block;
+    width: 1.5vw;
+    height: 2vw;
+    margin-left: 1%;
+    margin-top: 2vh;
+}
+
+#exemplecourriel:hover {
+    box-shadow: 6px 6px 5px rgba(0, 0, 0, 0.678);
+}
+
+#exemplecourriel {
+    background-image: url(images/mailfond.jpg);
+    max-width: 1100px;
+    width: 80vw;
+    padding-left: 10px;
+    border-radius: 10px;
+    color: rgb(73, 72, 72);
+    margin-top: 2vh;
+}
+
+#courriel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+p#objet {
+    padding-top: 100px;
+    padding-bottom: 20px;
+    font-family: 'Abel', sans-serif;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+#mail, #fin {
+    font-family: 'Abel', sans-serif;
+    margin-bottom: 2%;
+    padding: 0%;
+    font-weight: bold;
+}
+
+#courriel #fin {
+    text-align: end;
+    margin-right: 2%;
+}
+
+#interview {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+#infoMetier {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+    border-radius: 10px;
+}
+
+.diffinfos {
+    width: 25vw;
+    color: #D3CAD3;
+}
+
+.diffinfos:hover {
+    border-bottom: solid 3px #D3CAD3;
+    transition: all 0.5s;
+}
+
+#infoMetier:active {
+    border: solid 3px #D3CAD3;
+    background-color: #eedcb883;
+    transition: all 0.5s;
+}
+
+#interview article p {
+    font-family: 'Abel', sans-serif;
+    font-weight: bold;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    font-size: 1.4rem;
+}
+
+#interview article strong {
+    font-weight: lighter;
+}
+
+#interview {
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    border-radius: 10px;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+}
+
+#symptheseMetier {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10vw;
+    margin-right: 10vw;
+}
+
+#symptheseMetier h1 {
+    margin-bottom: 2%;
+    text-align: center;
+}
+
+#symptheseMetier h2 {
+    margin-bottom: 1%;
+    font-size: 1.5rem;
+    text-decoration: underline;
+    color: #D3CAD3;
+}
+
+#symptheseMetier h3 {
+    font-size: 1.2rem;
+    color: #D3CAD3;
+    font-weight: lighter;
+}
+
+#symptheseMetier p {
+    font-family: 'Abel', sans-serif;
+    font-weight: bold;
+}
+
+#symptheseMetier #commentaire {
+    font-weight: lighter;
+    font-family: 'Abel', sans-serif;
+    font-size: .9rem;
+    color: #D3CAD3;
+}
+
+#symptheseMetier ul #commentaire {
+    font-weight: lighter;
+    font-family: 'Abel', sans-serif;
+    font-size: .7rem;
+    color: #D3CAD3;
+}
+
+#partie2 ul {
+    list-style-position: inside;
+}
+
+#partie2 ul li {
+    font-size: .9rem;
+    font-family: 'Abel', sans-serif;
+}
+
+#symptheseMetier ul ul {
+    list-style-type: square;
+    margin-left: 4%;
+    font-size: 60%;
+}
+
+#metier.bouton {
+    margin-top: 3%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#symptheseMetier .symp {
+    margin-bottom: 2%;
+}
+
+#symptheseMetier ul strong {
+    font-weight: 300;
+    font-size: .8rem;
+}
+
+#partie3 ul li {
+    list-style-position: inside;
+    font-weight: lighter;
+    font-family: 'Abel', sans-serif;
+    list-style-type: decimal;
+    padding-left: 2%;
+}
+
+#symptheseMetier .symp:hover {
+    background-color: rgba(240, 236, 236, 0.4);
+    padding: 1%;
+    border-radius: 10px;
+    transition: all 0.5s;
+    color: #1c2b3b;
+}
+
+#symptheseMetier .symp:hover h3 {
+    color: #2f5074;
+}
+
+#symptheseMetier .symp:hover #commentaire {
+    color: #284b70;
+    font-weight: 600;
+}
+
+/*___________________ POSTER______________*/
+
+#poster img {
+    width: 50vw;
+    margin-bottom: 3%;
+    cursor: zoom-in;
+}
+
+#poster img:hover {
+    width: 70vw;
+    transition: all .5s;
+}
+
+main#poster {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 3%;
+}
+
+@media screen and (max-width: 760px) {
+    header h1 {
+        margin-left: 3%;
+        font-size: 3.3rem;
+    }
+
+
+    /*___________________ INDEX______________*/
+    main#index {
+        flex-direction: column;
+    }
+    #index a {
+        width: 40vw;
+        font-size: 4vw;
+    }
+    /*___________________ CV______________*/
+    .icone {
+        width: 8vw;
+    }
+    article {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .cotes {
+        width: 80%;
+        justify-content: center;
+    }
+    #titreicone {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+    #competences ul {
+        list-style-type: none;
+    }
+    .cotes:hover {
+        background-color: rgba(240, 236, 236, 0);
+        transition: none;
+        color: #EEDCB8;
+    }
+    #présentation {
+        display: flex;
+        flex-direction: row;
+        width: 80%;
+        margin-top: 5%;
+        justify-content: center;
+    }
+    #présentation img {
+        margin-top: 0;
+        margin-right: 6%;
+        width: 30%;
+    }
+    #gauche {
+        margin-bottom: 0;
+    }
+    #droite {
+        margin-top: 0;
+    }
+    #menu a {
+        width: 25vw;
+        font-size: 3vh;
+    }
+    div#trait {
+        display: none;
+    }
+    /*___________________METIER______________*/
+    #questionnaire #titrepartie img {
+        display: none;
+    }
+    #infoMetier {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .diffinfos {
+        width: 80%;
+        margin-top: 2%;
+    }
+    /*___________________ POSTER______________*/
+    #index.poster a {
+        height: 60px;
+    }
+    main#poster {
+        padding-top: 5%;
+        margin: 0;
+        height: 70vh;
+    }
+    body.poster header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 17vh;
+    }
+    body.poster header #menu {
+        align-self: center;
+    }
+    #symptheseMetier h3, h2, p {
+        text-align: center;
+    }
+}
